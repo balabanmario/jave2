@@ -31,7 +31,7 @@ import java.util.ArrayList;
  *
  * @author Carlo Pelliccia
  */
-class RBufferedReader extends BufferedReader {
+public class RBufferedReader extends BufferedReader {
 
     /**
      * Re-inserted lines buffer.

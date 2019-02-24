@@ -27,23 +27,23 @@ public class EncoderException extends Exception {
 
     private static final long serialVersionUID = 1L;
 
-    EncoderException() {
+    public EncoderException() {
         super();
     }
 
-    EncoderException(String message) {
+    public EncoderException(String message) {
         super(message);
     }
-    
-    EncoderException(int step, int lineNumber, String message) {
+
+    public EncoderException(int step, int lineNumber, String message) {
         super("In step: "+step+" Error in line "+lineNumber+" : <"+message+">");
     }
 
-    EncoderException(Throwable cause) {
+    public EncoderException(Throwable cause) {
         super(cause);
     }
 
-    EncoderException(String message, Throwable cause) {
+    public EncoderException(String message, Throwable cause) {
         super(message, cause);
     }
 

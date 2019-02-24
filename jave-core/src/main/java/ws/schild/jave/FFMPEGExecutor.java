@@ -30,7 +30,7 @@ import org.apache.commons.logging.LogFactory;
  *
  * @author Carlo Pelliccia
  */
-class FFMPEGExecutor {
+public class FFMPEGExecutor {
 
     private final static Log LOG = LogFactory.getLog(FFMPEGExecutor.class);
 
@@ -203,8 +203,8 @@ class FFMPEGExecutor {
      * Return the exit code of the ffmpeg process
      * If the process is not yet terminated, it waits for the termination
      * of the process
-     * 
-     * @return 
+     *
+     * @return int status
      */
     public int getProcessExitCode()
     {
